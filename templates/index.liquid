@@ -13,5 +13,4 @@
   {% endfor %}
 </ul>
 <br>
-{% assign collection = collections['featured-collection'] %}
-{{ collection.title }}
+{{ collections.featured.products | size }}
