@@ -6,8 +6,12 @@
 <br>
 {% assign array_string = "Mike,Chris,Bob,Densie,Clinton" %}
 {% assign array = array_string | split: ',' %}
+<br>
 <ul>
   {% for name in array %}
     <li>{{ name }}</li>
   {% endfor %}
 </ul>
+<br>
+{% assign collection = collections['featured-collection'] %}
+{{ collection.title }}
